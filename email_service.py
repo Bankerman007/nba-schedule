@@ -4,13 +4,13 @@ import os
 def send_email(message):
 
     sender_add= os.environ['sender_add']
-    receiver_add= os.environ['receiver_add']
+    receiver_add= os.environ['receiver_add'], 'brandon@justdev.us', 'swright@homestbk.com'
     password = os.environ['GMAIL']
 
 
-    smtp_server=smtplib.SMTP("smtp.gmail.com",587)
+    smtp_server= os.environ['smtp_server']
     smtp_server.ehlo()
-
+ 
     smtp_server.starttls()
     smtp_server.ehlo()
 
