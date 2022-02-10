@@ -8,7 +8,7 @@ def send_email(message):
     password = os.environ['GMAIL']
 
 
-    smtp_server= os.environ.smtplib.SMTP['smtp_server']
+    smtp_server= smtplib.SMTP("smtp.gmail.com",587)
     smtp_server.ehlo()
  
     smtp_server.starttls()
