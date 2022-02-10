@@ -1,11 +1,11 @@
 import smtplib
-
+import os 
 
 def send_email(message):
 
     sender_add='scottwright.qrf@gmail.com'
     receiver_add='scottwright.qrf@gmail.com'
-    password='GolfGolf2021!'
+    password= os.environ['GMAIL']
 
 
     smtp_server=smtplib.SMTP("smtp.gmail.com",587)
