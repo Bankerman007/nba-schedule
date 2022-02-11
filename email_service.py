@@ -4,7 +4,7 @@ import os
 def send_email(message):
 
     sender_add= os.environ['sender_add']
-    receiver_add= os.environ['receiver_add'],'swright@homestbk.com'
+    receiver_add= os.environ['receiver_add']
     password = os.environ['GMAIL']
 
 
