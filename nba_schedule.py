@@ -15,7 +15,7 @@ def main():
             continue
 
     
-    time.sleep(2)
+    time.sleep(5)
     sms_all(scraper)
 
 main()
