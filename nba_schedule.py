@@ -14,7 +14,7 @@ def main():
             continue
 
     
-    print(scraper)
+    
     sms_all(scraper)
 
 main()
