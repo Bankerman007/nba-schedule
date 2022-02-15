@@ -1,5 +1,6 @@
 import pandas as pd
 from text import sms_all
+import time
 
 def main():
 
@@ -14,7 +15,7 @@ def main():
             continue
 
     
-    
+    time.sleep(2)
     sms_all(scraper)
 
 main()
