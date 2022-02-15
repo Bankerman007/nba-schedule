@@ -1,5 +1,5 @@
 import pandas as pd
-from email_service import send_email
+from text import sms_all
 
 def main():
 
@@ -14,7 +14,7 @@ def main():
             continue
 
     
-
-    send_email(scraper)
+    print(scraper)
+    sms_all(scraper)
 
 main()

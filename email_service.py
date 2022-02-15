@@ -5,10 +5,10 @@ def send_email(message):
 
     sender_add= os.environ['sender_add']
     receiver_add= os.environ['receiver_add']
-    password = os.environ['GMAIL']
+    password = os.environ['YAHOO']
 
 
-    smtp_server= smtplib.SMTP("smtp.gmail.com",587)
+    smtp_server= smtplib.SMTP("smtp.mail.yahoo.com",587)
     smtp_server.ehlo()
  
     smtp_server.starttls()
