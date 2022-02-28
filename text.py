@@ -10,7 +10,7 @@ def sms_all(scraper):
                     .create(
                     body= scraper,
                     from_='+16467989631',
-                    to= '+18475323886',
+                    to= '+18475323886'+'+12242411079',
                         )
         
     print(message.sid)
