@@ -10,7 +10,7 @@ def main():
     row = pd.concat(scraper)
     df = pd.DataFrame(row, columns= ['Away', 'Home', 'Time / TV'])
     print(df)
-    sms_all(scraper)
+    sms_all(df)
     
 
 main()
