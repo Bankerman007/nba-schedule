@@ -1,11 +1,16 @@
 import pandas as pd
+from email_service import send_email
 from text import sms_all
-from datetime import time
+
 
 
 def main():
     scraper = pd.read_html('https://www.cbssports.com/nba/schedule/')
-    print(scraper)
+    
+    row = pd.concat(scraper)
+    df = pd.DataFrame(row, columns= ['Away', 'Home', 'Time / TV'])
+    print(df)
     sms_all(scraper)
+    
 
 main()
