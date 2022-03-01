@@ -6,7 +6,7 @@ def sms_all(scraper):
     auth_token = os.environ['TWILIO_AUTH_TOKEN']
     client = Client(account_sid, auth_token)
     scraper = str(scraper)
-    numbers = ('8475323886','8475323886')
+    numbers = ('8475323886','2242411079')
     for i in numbers:
         send = i
         message = client.messages \
